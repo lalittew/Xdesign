@@ -53,7 +53,7 @@ public class HomePage extends DriverBaseClass {
 
     @Then("I can see error message")
     public void i_can_see_error_message() {
-        generalFunctions.checkElementPresent(loginPageFunction.loginError);
+        generalFunctions.checkElementPresent(loginPageFunction.invalidLoginError);
     }
 
     @Then("I close the browser")
