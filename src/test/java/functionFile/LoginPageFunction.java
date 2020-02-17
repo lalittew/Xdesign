@@ -1,6 +1,7 @@
 package functionFile;
 
 import browserFactory.DriverBaseClass;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,4 +18,12 @@ public class LoginPageFunction extends DriverBaseClass {
 
     @FindBy(how = How.ID, using = "password")
     public WebElement passwordTextBox;
+
+    @FindBy(how = How.ID, using = "login-submit")
+    public WebElement signInButton;
+
+    public WebElement loginError = driver.findElement(By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/strong"));
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"mainContent\"]/div[2]/div/div[1]/strong")
+    public WebElement invalidLoginError;
 }

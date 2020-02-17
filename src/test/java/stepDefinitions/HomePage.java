@@ -40,8 +40,20 @@ public class HomePage extends DriverBaseClass {
 
     @Then("I can see text boxes for entering Email and Password")
     public void i_can_see_text_boxes_for_entering_Email_and_Password() {
-        Assert.assertTrue(loginPageFunction.emailAddressTextBox.isDisplayed());
-        Assert.assertTrue(loginPageFunction.passwordTextBox.isDisplayed());
+        generalFunctions.checkElementPresent(loginPageFunction.emailAddressTextBox);
+        generalFunctions.checkElementPresent(loginPageFunction.passwordTextBox);
+    }
+
+    @Then("I enter wrong {string} and {string} and click Login")
+    public void i_enter_wrong_and_and_click_Login(String username, String password) throws InterruptedException {
+        generalFunctions.enterText(loginPageFunction.emailAddressTextBox,username);
+        generalFunctions.enterText(loginPageFunction.passwordTextBox,password);
+        generalFunctions.click(loginPageFunction.signInButton);
+    }
+
+    @Then("I can see error message")
+    public void i_can_see_error_message() {
+        generalFunctions.checkElementPresent(loginPageFunction.loginError);
     }
 
     @Then("I close the browser")

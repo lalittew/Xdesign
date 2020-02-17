@@ -24,4 +24,12 @@ public class GeneralFunctions extends DriverBaseClass {
        Assert.assertEquals(actualPageTitle,expectedPageTitle,"Actual Page title is different from expected page title !!!");
     }
 
+    public void enterText(WebElement element,String text){
+        element.clear();
+        element.sendKeys(text);
+    }
+
+    public void checkElementPresent(WebElement element){
+        org.junit.Assert.assertTrue(element.isDisplayed());
+    }
 }

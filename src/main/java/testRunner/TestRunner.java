@@ -8,7 +8,7 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = "/Users/lalittewari/Documents/Projects/SeleniumCucumber/Features",
+        features = "./Features",
         glue = "stepDefinitions",
         tags = "@test"
 )
