@@ -9,7 +9,7 @@ public class DriverBaseClass {
 
     public static WebDriver startBrowser()
     {
-        System.setProperty("webdriver.chrome.driver","/Users/lalittewari/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver","./WebDrivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.myprotein.com/");
