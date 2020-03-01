@@ -21,19 +21,17 @@ public class DriverBaseClass {
         return driver;
     }
 
-    @Before
-    public void startTest()
+    public static void startTest()
     {
         System.out.println("**********************");
         System.out.println("Test Started");
 
     }
 
-    @After
-    public void afterTest()
+    public static void afterTest()
     {
+        driver.quit();
         System.out.println("**********************");
         System.out.println("Test Finished");
-
     }
 }
