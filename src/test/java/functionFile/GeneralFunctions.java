@@ -1,15 +1,10 @@
 package functionFile;
 
 import browserFactory.DriverBaseClass;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class GeneralFunctions extends DriverBaseClass {
-
-    public GeneralFunctions(WebDriver ldriver){
-        this.driver = ldriver;
-    }
 
     public void click(WebElement element){
         element.click();
