@@ -77,6 +77,8 @@ obj/
 *.opendb
 *.VC.db
 *.aps
+*.class
+.idea/workspace.iml
 launchSettings.json
 Generated/
 ipch/
