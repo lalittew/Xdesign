@@ -7,13 +7,12 @@ import io.cucumber.java.After;
 public class Hooks {
 
     @Before
-    public void beforeTest(){
+    public void beforeTest() {
         DriverBaseClass.startTest();
     }
 
     @After
-    public void afterTest()
-    {
+    public void afterTest() {
         DriverBaseClass.afterTest();
     }
 }

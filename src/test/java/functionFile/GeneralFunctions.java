@@ -25,6 +25,11 @@ public class GeneralFunctions extends DriverBaseClass {
     }
 
     public void checkElementPresent(WebElement element){
-        org.junit.Assert.assertTrue(element.isDisplayed());
+        Assert.assertTrue(element.isDisplayed());
+    }
+
+    public void checkElementText(WebElement element, String expectedText){
+        String actualText = element.getText();
+        Assert.assertEquals(actualText , expectedText , "Actual text is different from expected text");
     }
 }
