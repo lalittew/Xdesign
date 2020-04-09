@@ -18,4 +18,3 @@ Feature: Perform basic function on My Protein UK home page
     Examples:
       |username|password|
       |lalit   |Abcd1234|
-      |WrongUID|Abcd1234|

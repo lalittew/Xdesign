@@ -114,3 +114,9 @@ bazel-testlogs
 
 /.vscode/
 /.scannerwork/
+tmp\\screenshot.png
+target/cucumber-reports/formatter.js
+target/cucumber-reports/index.html
+target/cucumber-reports/jquery-3.4.1.min.js
+target/cucumber-reports/report.js
+target/cucumber-reports/style.css

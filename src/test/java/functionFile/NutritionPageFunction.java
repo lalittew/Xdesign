@@ -9,6 +9,6 @@ import org.openqa.selenium.support.How;
 public class NutritionPageFunction extends DriverBaseClass {
     public static String nutritionPageTitle = "Sports Nutrition Supplements & Products | MYPROTEIN™";
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"nav\"]/div[1]/div[2]/div[4]/nav/div[1]/ul/li[1]/a")
+    @FindBy(how = How.XPATH, using = "//a[@href='/nutrition.list']")
     public WebElement nutritionMenuLink;
 }

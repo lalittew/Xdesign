@@ -20,6 +20,6 @@ public class LoginPageFunction extends DriverBaseClass {
     @FindBy(how = How.ID, using = "login-submit")
     public WebElement signInButton;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"account\"]/div[4]/div/div[1]/strong")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"account\"]/div[3]/div/div/strong")
     public WebElement invalidLoginError;
 }
