@@ -11,4 +11,7 @@ public class NutritionPageFunction extends DriverBaseClass {
 
     @FindBy(how = How.XPATH, using = "//a[@href='/nutrition.list']")
     public WebElement nutritionMenuLink;
+
+    @FindBy(how = How.CLASS_NAME, using = "emailReengagement_close_button")
+    public WebElement closePopUp;
 }

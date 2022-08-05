@@ -17,6 +17,7 @@ public class NutritionPage extends DriverBaseClass {
 
     @When("I click Nutrition from the Menu")
     public void i_click_Nutrition_from_the_Menu() {
+        generalFunctions.click(nutritionPageFunction.closePopUp);
         generalFunctions.click(nutritionPageFunction.nutritionMenuLink);
     }
 
