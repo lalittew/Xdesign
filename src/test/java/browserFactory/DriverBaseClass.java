@@ -12,7 +12,7 @@ public class DriverBaseClass {
         System.setProperty("webdriver.chrome.driver","./WebDrivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.myprotein.com/");
+        driver.get("https://www.hudl.com/");
 
         return driver;
     }
