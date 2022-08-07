@@ -7,6 +7,6 @@ import org.openqa.selenium.support.How;
 
 public class HomePageFunction extends DriverBaseClass {
 
-    @FindBy(how = How.LINK_TEXT, using = "Log ins")
+    @FindBy(how = How.LINK_TEXT, using = "Log in")
     public WebElement loginButtonHomePage;
 }

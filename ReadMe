@@ -1,0 +1,48 @@
+Explaining highlights of project:
+
+Framework and language used:
+This project is made by using Selenium Cucumber Framework with Page Object Model using Java as language
+This project is Maven project and all maven selenium,cucumber,java,junit and other dependencies can be found in "pom.xml" file
+
+
+Feature File:
+1) This project contains two feature file:
+        a) HudlHomePage: This contains test for home page to naivgate to login page
+        b) LoginPage: This file contains tests related to Login page
+2) This path for feature files is : /HudlLoginProject/Features
+
+
+Step Definitions:
+1) This project contain two step definitions file:
+        a) HudlHomePage: This contains steps definitions for the steps defined HudlHomePageFeatureFile
+        a) LoginPage: This contains steps definitions for the steps defined LoginPageFeatureFile
+2) The path for Step definitions files is: /HudlLoginProject/src/test/java/stepDefinitions
+
+Locators and Functions:
+1) This project contains 6 function files which can be found under path: /HudlLoginProject/src/test/java/functionFile
+2) All the different pages contains different functions files
+3) The locators find to use the element can be found under respective related function file name
+4) Different type of locators have been used to explain variety and best way to find the elements on page
+
+
+How to run the tests:
+1) There are two ways tests can be run:
+        a) Go to TestRunner.java class and run TestRunner function by clicking green button next to it
+        b) Create a Run configuration. This can be done by adding a Junit configuration using + button under edit configuration
+        and selecting TestRunner class
+
+Note:
+TestRunner class can be found under path: /HudlLoginProject/src/main/java/testRunner
+Make sure all the test having annotation same as defined in Test Runner class, for this project I have used "@testHudl" as an annotation
+If the anootations above the test are not matching the one defined in TestRunner class it will skip those tests
+
+
+ScreenShot for failing test:
+1) Tests which are failed will generate screen shots and that can be found under path with the respective test name and step: /HudlLoginProject/ScreenShots
+
+
+HTML Reports
+1) HTML report will get generated at the end of run and can be found at path: /HudlLoginProject/target/cucumber-reports/index.html
+2) Just drag and drop this "index.html" report in browser to view report
+
+
