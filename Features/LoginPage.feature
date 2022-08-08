@@ -1,6 +1,6 @@
 Feature: This feature file is to validate the functionality of the login page
 
-  @testHudls
+  @testHudl
   Scenario: Verify the UI of the Login page
     Given I am on Hudl home page
     When I click Login button on Home page
@@ -8,7 +8,7 @@ Feature: This feature file is to validate the functionality of the login page
     And I verify the UI of login page
     Then I close the browser
 
-   @testHudls
+   @testHudl
    Scenario: Verify that clicking SignUp button in Login page will navigate user to SigningUp page
      Given I am on Hudl home page
      And I click Login button on Home page
@@ -16,7 +16,7 @@ Feature: This feature file is to validate the functionality of the login page
      Then I navigate to Sign Up page
      And I close the browser
 
-   @testHudls
+   @testHudl
    Scenario: Verify that clicking Need help link on Login page navigates user to help page to get help on resetting password
      Given I am on Hudl home page
      And I click Login button on Home page
@@ -24,7 +24,7 @@ Feature: This feature file is to validate the functionality of the login page
      Then I navigate to Help page to get help on password rest
      And I close the browser
 
-  @testHudls
+  @testHudl
   Scenario: Verify that clicking Login with an organization button navigates user to organization login page
     Given I am on Hudl home page
     And I click Login button on Home page
@@ -32,7 +32,7 @@ Feature: This feature file is to validate the functionality of the login page
     Then I navigate to organization login page
     And I close the browser
 
-  @testHudls
+  @testHudl
   Scenario: Verify that user is able to select/deselect Remember me check box by either clicking on Remember me text or check box
     Given I am on Hudl home page
     And I click Login button on Home page
@@ -46,7 +46,7 @@ Feature: This feature file is to validate the functionality of the login page
     Then Remember me check box is not selected
     And I close the browser
 
-  @testHudls
+  @testHudl
   Scenario: Verify that clicking back button on login page taking user back to home page
     Given I am on Hudl home page
     And I click Login button on Home page
@@ -54,14 +54,14 @@ Feature: This feature file is to validate the functionality of the login page
     Then I am on Hudl home page
     And I close the browser
 
-  @testHudls
+  @testHudl
   Scenario: Verify that when user lands on login screen from home page then focus of cursor is in Email text box
     Given I am on Hudl home page
     And I click Login button on Home page
     Then I confirm that focus is on email text box in login page
     And I close the browser
 
-  @testHudls
+  @testHudl
   Scenario Outline: Verify that user is not able to login into Hudl on giving wrong email or password
     Given I am on Hudl home page
     And I click Login button on Home page
