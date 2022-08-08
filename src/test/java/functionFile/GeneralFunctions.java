@@ -44,6 +44,19 @@ public class GeneralFunctions extends DriverBaseClass {
         assert(element).equals(driver.switchTo().activeElement());
     }
 
+    public void verifyElementIsDisabled(WebElement element){
+        Assert.assertFalse(element.isEnabled());
+    }
+
+    public void pageRefresh() throws InterruptedException {
+        driver.navigate().refresh();
+        Thread.sleep(1000);
+    }
+
+    public void checkFieldIsEmpty(WebElement element){
+        Assert.assertTrue(element.getAttribute("value").isEmpty());
+    }
+
     public void checkElementText(WebElement element, String expectedText){
         String actualText = element.getText();
         Assert.assertEquals(actualText , expectedText , "Actual text is different from expected text");
