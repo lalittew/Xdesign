@@ -1,0 +1,80 @@
+Explaining highlights of project:
+
+Framework and language used:
+This project is made by using Selenium Cucumber Framework with Page Object Model using Java as language
+This project is Maven project and all maven selenium,cucumber,java,junit and other dependencies can be found in "pom.xml" file
+
+
+Feature File:
+1) This project contains two feature file:
+        a) HudlHomePage: This contains test for home page to naivgate to login page
+        b) LoginPage: This file contains tests related to Login page
+2) This path for feature files is : /HudlLoginProject/Features
+
+Note: For the valid login credentials I needed to register into website which i was not compeletely sure how I can do, hence I have not written
+exclusive test for the same but can be easily written using the test "Verify that user is not able to login into Hudl on giving wrong email or password"
+and replacing the last step with correct page expection and also by replacing invalid credentials with valid credential
+
+
+Step Definitions:
+1) This project contain two step definitions file:
+        a) HudlHomePage: This contains steps definitions for the steps defined HudlHomePageFeatureFile
+        a) LoginPage: This contains steps definitions for the steps defined LoginPageFeatureFile
+2) The path for Step definitions files is: /HudlLoginProject/src/test/java/stepDefinitions
+
+Locators and Functions:
+1) This project contains 6 function files which can be found under path: /HudlLoginProject/src/test/java/functionFile
+2) All the different pages contains different functions files
+3) The locators find to use the element can be found under respective related function file name
+4) Different type of locators have been used to explain variety and best way to find the elements on page
+5) Functions files also contains Strings related to respective page at top level and then all locators below to it
+
+
+How to run the tests:
+1) There are two ways tests can be run:
+        a) Go to TestRunner.java class and run TestRunner function by clicking green button next to it
+        b) Create a Run configuration. This can be done by adding a Junit configuration using + button under edit configuration
+        and selecting TestRunner class
+
+Note:
+TestRunner class can be found under path: /HudlLoginProject/src/main/java/testRunner
+Make sure all the test having annotation same as defined in Test Runner class, for this project I have used "@testHudl" as an annotation
+If the anootations above the test are not matching the one defined in TestRunner class it will skip those tests
+
+
+ScreenShot for failing test:
+1) Tests which are failed will generate screen shots and that can be found under path with the respective test name and step: /HudlLoginProject/ScreenShots
+
+
+HTML Reports
+1) HTML report will get generated at the end of run and can be found at path: /HudlLoginProject/target/cucumber-reports/index.html
+2) Just drag and drop this "index.html" report in browser to view report
+
+
+Bugs and issues found in desktop browser version: Tested in chrome(Version 104.0.5112.79)
+1) Page title of Help page whoch opens by clicking "Need help?" is showing as "Log In"
+2) On giving wrong credentials and clicking login button giving error message which also contains "Need help?" link . It is more of suggestion
+because it may confuse user to display some other help page different from other need help page
+3) Log in button text on Home page is different from Log In button text present in Login page
+4) If there is any error happens like giving no value under email or password and clicking Login button then response code coming back is 200.
+This I am not sure should be Http 200 or not as I am not sure on requirements
+5) If user gives wrong email and password and click Login button , then user is getting Http 200 back , but may be user should get Http 401.
+Again I am not sure on this how the requirements are around this.
+
+Bugs and issues found in mobile browser version: I tested this in iPhone 13 Pro(15.6), in safari
+1) Press Login button without entering any value
+   Click in password or email text box
+   Try scrolling
+Bug: It will not let you scroll and Hudl logo will be half visible , while Sign Up button and back button will not be visible to user
+
+2) In the login page put email in email text box and change the phone mode to landscape mode and then change back to portrait mode
+Bug: This will change the UI of page completely and many fields will not be visible to user anymore unless user refresh page
+
+3)When there is error providing invalid credentials there no fields are highlighted. This could be product requirement but I just wanted to highlight
+this
+
+4) Error message disappear as soon you type anything in text box, again this could be requirement but I just wanted to highlight
+
+
+
+

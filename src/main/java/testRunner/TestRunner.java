@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
         strict = true,
         features = "./Features",
         glue = "stepDefinitions",
-        tags = "@test",
+        tags = "@testHudl",
         plugin = {"pretty", "html:target/cucumber-reports"},
         monochrome = true
 )

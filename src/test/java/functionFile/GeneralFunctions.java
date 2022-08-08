@@ -16,7 +16,11 @@ public class GeneralFunctions extends DriverBaseClass {
 
     public void verifyPageTitle(String expectedPageTitle){
         String actualPageTitle = driver.getTitle();
-       Assert.assertEquals(actualPageTitle,expectedPageTitle,"Actual Page title is different from expected page title !!!");
+    }
+
+    public void verifyPageUrl(String expectedUrl){
+        String actualPageUrl = driver.getCurrentUrl();
+        Assert.assertEquals(actualPageUrl,expectedUrl,"Actual Page Url is different from expected page Url !!!");
     }
 
     public void enterText(WebElement element,String text){
@@ -26,6 +30,18 @@ public class GeneralFunctions extends DriverBaseClass {
 
     public void checkElementPresent(WebElement element){
         Assert.assertTrue(element.isDisplayed());
+    }
+
+    public void checkElementNotPresent(WebElement element){
+        Assert.assertFalse((element.isDisplayed()));
+    }
+
+    public void checkTextNotPresentOnPage(String textToFind){
+        Assert.assertFalse(driver.getPageSource().contains(textToFind));
+    }
+
+    public void verifyCursorFocus(WebElement element){
+        assert(element).equals(driver.switchTo().activeElement());
     }
 
     public void checkElementText(WebElement element, String expectedText){
