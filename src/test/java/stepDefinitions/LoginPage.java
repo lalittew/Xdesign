@@ -109,12 +109,10 @@ public class LoginPage extends DriverBaseClass {
         generalFunctions.verifyCursorFocus(loginPageFunction.emailTextBox);
     }
 
-    @When("I enter invalid {string} and {string} and click Login button")
-    public void i_enter_invalid_and_and_click_Login_button(String email, String password) throws InterruptedException {
+    @When("I enter invalid {string} and {string}")
+    public void i_enter_invalid_and_and_(String email, String password) throws InterruptedException {
         generalFunctions.enterText(loginPageFunction.emailTextBox,email);
         generalFunctions.enterText(loginPageFunction.passwordTextBox,password);
-        generalFunctions.click(loginPageFunction.loginButton);
-        Thread.sleep(500);
     }
 
     @Then("I can see error message for wrong credentials")
@@ -124,4 +122,26 @@ public class LoginPage extends DriverBaseClass {
         generalFunctions.checkElementPresent(loginPageFunction.invalidCredentialNeedHelp);
     }
 
+    @When("I click Login button on login screen")
+    public void i_click_Login_button_on_login_screen() throws InterruptedException {
+        generalFunctions.click(loginPageFunction.loginButton);
+        Thread.sleep(500);
+    }
+
+    @When("I enter email")
+    public void i_enter_email() throws InterruptedException {
+        generalFunctions.enterText(loginPageFunction.emailTextBox,loginPageFunction.emailNotExist);
+        Thread.sleep(500);
+    }
+
+    @Then("I cannot see error message for wrong credentials")
+    public void i_cannot_see_error_message_for_wrong_credentials() {
+        generalFunctions.checkTextNotPresentOnPage(loginPageFunction.invalidCredentialErrorText);
+
+    }
+    @When("I enter password")
+    public void i_enter_password() throws InterruptedException {
+        generalFunctions.enterText(loginPageFunction.passwordTextBox,loginPageFunction.invalidPassword);
+        Thread.sleep(500);
+    }
 }

@@ -9,6 +9,9 @@ public class LoginPageFunction extends DriverBaseClass {
 
     public String loginPageTitle = "Log In";
     public String loginPageUrl = "https://www.hudl.com/login";
+    public String emailNotExist = "lalittew@gmail.com";
+    public String invalidPassword = "Abc123";
+    public String invalidCredentialErrorText = "We didn't recognize that email and/or password.";
 
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"app\"]/section/div[2]/div/form/a")
