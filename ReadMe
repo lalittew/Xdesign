@@ -49,6 +49,7 @@ ScreenShot for failing test:
 HTML Reports
 1) HTML report will get generated at the end of run and can be found at path: /HudlLoginProject/target/cucumber-reports/index.html
 2) Just drag and drop this "index.html" report in browser to view report
+3) There are colour contrast issues present on page when you run accessibility using Lighthouse in the inspect element feature. 
 
 
 Bugs and issues found in desktop browser version: Tested in chrome(Version 104.0.5112.79)
@@ -74,6 +75,11 @@ Bug: This will change the UI of page completely and many fields will not be visi
 this
 
 4) Error message disappear as soon you type anything in text box, again this could be requirement but I just wanted to highlight
+
+5) Click on login page without entering any values in email or password field to get the error message.Now click inside any text box(password/email)
+Bug: There is white space at the bottom of page is visible when you scroll
+
+
 
 
 
