@@ -144,4 +144,24 @@ public class LoginPage extends DriverBaseClass {
         generalFunctions.enterText(loginPageFunction.passwordTextBox,loginPageFunction.invalidPassword);
         Thread.sleep(500);
     }
+
+    @Then("Login button is disabled")
+    public void login_button_is_disabled() {
+        generalFunctions.verifyElementIsDisabled(loginPageFunction.loginButton);
+    }
+
+    @When("I refresh the page")
+    public void i_refresh_the_page() throws InterruptedException {
+        generalFunctions.pageRefresh();
+    }
+
+    @Then("I can see email field is empty")
+    public void i_can_see_email_field_is_empty() {
+        generalFunctions.checkFieldIsEmpty(loginPageFunction.emailTextBox);
+    }
+
+    @Then("I can see password field is empty")
+    public void i_can_see_password_field_is_empty() {
+        generalFunctions.checkFieldIsEmpty(loginPageFunction.passwordTextBox);
+    }
 }

@@ -89,7 +89,36 @@ Feature: This feature file is to validate the functionality of the login page
     Then I can see error message for wrong credentials
     When I enter password
     Then I cannot see error message for wrong credentials
+    And I close the browser
 
+  @testHudl
+  Scenario: Verify that Login button is disabled when user enter wrong credentials and click Login button, and login button enables as soon user enters any value in Email or Password field
+    Given I am on Hudl home page
+    And I click Login button on Home page
+    When I enter email
+    And I enter password
+    When I click Login button on login screen
+    Then I can see error message for wrong credentials
+    And Login button is disabled
+    When I enter email
+    Then I cannot see error message for wrong credentials
+    And I click Login button on login screen
+    Then I can see error message for wrong credentials
+    When I enter password
+    Then I cannot see error message for wrong credentials
+    And I click Login button on login screen
+    Then I can see error message for wrong credentials
+    And I close the browser
+
+  @testHudl
+  Scenario: Verify that when user refresh the page after entering values in email or password field, then page will reset and no values are present both fields
+    Given I am on Hudl home page
+    And I click Login button on Home page
+    When I enter email
+    And I enter password
+    When I refresh the page
+    Then I can see email field is empty
+    And I can see password field is empty
 
 #  Note: For the valid login credentials I needed to register into website which i was not compeletely sure how I can do, hence I have not written
 #  exclusive test for the same but can be easily written using the test steps defined under test "Verify that user is not able to login into Hudl on giving wrong email or password"
