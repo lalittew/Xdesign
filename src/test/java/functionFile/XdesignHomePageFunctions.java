@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -55,11 +57,31 @@ public class XdesignHomePageFunctions extends DriverBaseClass {
     public List<WebElement> listOfShuttlesDisplayed;
 
     @FindBy(how = How.XPATH, using = "//span[@class='launch-item__date']")
-    public List<WebElement> launchItemDate;
+    public List<WebElement> launchItemDates;
 
+    @FindBy(how = How.XPATH, using = "//span[@class='launch-item__number']")
+    public List<WebElement> launchItemNumbers;
 
     //All functions belong to xDesignHome page
     public List<String> actualYearDropDownOptions(){
         return generalFunctions.getAllValuesFromDropDown(FilterByYearDropDown);
+    }
+
+    public void checkIfListSortedDescendingOrder(List<WebElement> elements){
+        int size = elements.size();
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        for(int i=0; i<size; i++){
+            WebElement element = elements.get(i);
+            String text = element.getText();
+
+            String valueStr = text;
+            if(String.valueOf(text.charAt(0)).equals("#")){
+                valueStr = text.substring(1);
+            }
+            numbers.add(Integer.valueOf(valueStr));
+        }
+        for(int i=1; i<size; i++) {
+            Assert.assertTrue(numbers.get(i) <= numbers.get(i-1));
+        }
     }
 }

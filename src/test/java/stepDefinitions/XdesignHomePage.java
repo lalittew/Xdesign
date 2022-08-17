@@ -55,7 +55,27 @@ public class XdesignHomePage extends DriverBaseClass {
     @Then("Return a list of only launches in {int}")
     public void return_a_list_of_only_launches_in(Integer int1) {
         String yearToCheck = Integer.toString(int1);
-        generalFunctions.verifyFilteredListDisplayingCorrectYear(xdesignHomePageFunctions.launchItemDate, yearToCheck);
+        generalFunctions.verifyFilteredListDisplayingCorrectYear(xdesignHomePageFunctions.launchItemDates, yearToCheck);
+    }
+
+    @Given("No year filter is on")
+    public void no_year_filter_is_on() throws InterruptedException {
+        Thread.sleep(10000);
+        generalFunctions.checkElementPresent(xdesignHomePageFunctions.FilterByYearDropDown);
+    }
+
+    @When("Ordering is done {string}")
+    public void ordering_is_done(String string) {
+        //Clicking Sort button
+        generalFunctions.click(xdesignHomePageFunctions.SortButton);
+
+        //To verify that text of button changes to Sort Descending
+        generalFunctions.checkElementText(xdesignHomePageFunctions.SortButton,xdesignHomePageFunctions.sortDescendingButtonText);
+    }
+
+    @Then("Items should be ordered alphabetically")
+    public void items_should_be_ordered_alphabetically() {
+        xdesignHomePageFunctions.checkIfListSortedDescendingOrder(xdesignHomePageFunctions.launchItemNumbers);
     }
 
     @Given("I am on home page")
