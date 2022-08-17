@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bddf6474-1001-4879-96d0-6966d9c1ea38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Features/XdesignHomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/XdesignHomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Features/XdesignHomePageExtraTests.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePageExtraTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/HudlHomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/LoginPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,23 +21,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ReadMe" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="XdesignHomePage.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Features/XdesignHomePage.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="52">
               <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XdesignHomePage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XdesignHomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="56">
+              <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XdesignHomePageExtraTests.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Features/XdesignHomePageExtraTests.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="92" selection-start-column="92" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XdesignHomePageExtraTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePageExtraTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147">
+              <caret line="20" column="95" selection-start-line="20" selection-start-column="95" selection-end-line="20" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -157,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/test/java/functionFile/OrganizationLoginPageFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/HudlHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/functionFile/HomePageFunction.java" />
-        <option value="$PROJECT_DIR$/ReadMe" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginPage.java" />
         <option value="$PROJECT_DIR$/Features/LoginPage.feature" />
         <option value="$PROJECT_DIR$/Features/HudlHomePage.feature" />
@@ -166,8 +196,11 @@
         <option value="$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java" />
         <option value="$PROJECT_DIR$/Features/XdesignHomePage.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java" />
+        <option value="$PROJECT_DIR$/Features/XdesignHomePageExtraTests.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePageExtraTests.java" />
+        <option value="$PROJECT_DIR$/ReadMe" />
       </list>
     </option>
   </component>
@@ -307,8 +340,8 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="functionFile" />
       <recent name="stepDefinitions" />
+      <recent name="functionFile" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Features" />
@@ -479,11 +512,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45142856" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45142856" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -550,14 +583,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/HomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/HomePageFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -740,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -822,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Features/XdesignHomePage.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -841,11 +852,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="56">
+          <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/XdesignHomePageExtraTests.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="92" selection-start-column="92" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/XdesignHomePage.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePageExtraTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="20" column="95" selection-start-line="20" selection-start-column="95" selection-end-line="20" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
         </state>
       </provider>
     </entry>

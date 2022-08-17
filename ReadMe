@@ -6,10 +6,12 @@ This project is Maven project and all maven selenium,cucumber,java,junit and oth
 
 
 Feature File:
-1) This project contains two feature file:
-        a) HudlHomePage: This contains test for home page to naivgate to login page
-        b) LoginPage: This file contains tests related to Login page
-2) This path for feature files is : /HudlLoginProject/Features
+1) This path for feature files is : /Xdesign/Features
+2) Feature files contains different scenarios
+3) Scenarios which are given in taken home task pdf file are all under XdesignHomePage.feature file
+
+Note: Since there were not clear instructions whether I am allowed to change the gherkin format given I have used same statements as mentioned in
+pdf file
 
 Note: For the valid login credentials I needed to register into website which i was not compeletely sure how I can do, hence I have not written
 exclusive test for the same but can be easily written using the test "Verify that user is not able to login into Hudl on giving wrong email or password"
@@ -17,17 +19,17 @@ and replacing the last step with correct page expection and also by replacing in
 
 
 Step Definitions:
-1) This project contain two step definitions file:
-        a) HudlHomePage: This contains steps definitions for the steps defined HudlHomePageFeatureFile
-        a) LoginPage: This contains steps definitions for the steps defined LoginPageFeatureFile
-2) The path for Step definitions files is: /HudlLoginProject/src/test/java/stepDefinitions
+1) The path for Step definitions package files is: /Xdesign/src/test/java/stepDefinitions
+2) The step definitions for the respective feature files can be found under this package
+3) Under the steps definition file which part is doing what is briefly explained using comments
 
 Locators and Functions:
-1) This project contains 6 function files which can be found under path: /HudlLoginProject/src/test/java/functionFile
+1) This project contains 2 function files which can be found under package path: /Xdesign/src/test/java/functionFile
 2) All the different pages contains different functions files
 3) The locators find to use the element can be found under respective related function file name
 4) Different type of locators have been used to explain variety and best way to find the elements on page
 5) Functions files also contains Strings related to respective page at top level and then all locators below to it
+6) All the common functions which can be used across any pages are defined in GeneralFunctions class
 
 
 How to run the tests:
@@ -37,9 +39,10 @@ How to run the tests:
         and selecting TestRunner class
 
 Note:
-TestRunner class can be found under path: /HudlLoginProject/src/main/java/testRunner
-Make sure all the test having annotation same as defined in Test Runner class, for this project I have used "@testHudl" as an annotation
-If the anootations above the test are not matching the one defined in TestRunner class it will skip those tests
+TestRunner class can be found under path: /Xdesign/src/main/java/testRunner/TestRunner.java
+1) Make sure all the test having annotation same as defined in Test Runner class, for this project
+2) I have used "@test" as an annotation
+3) If the annotations above the test are not matching the one defined in TestRunner class it will skip those tests
 
 
 ScreenShot for failing test:
@@ -49,35 +52,16 @@ ScreenShot for failing test:
 HTML Reports
 1) HTML report will get generated at the end of run and can be found at path: /HudlLoginProject/target/cucumber-reports/index.html
 2) Just drag and drop this "index.html" report in browser to view report
-3) There are colour contrast issues present on page when you run accessibility using Lighthouse in the inspect element feature. 
 
-
-Bugs and issues found in desktop browser version: Tested in chrome(Version 104.0.5112.79)
-1) Page title of Help page whoch opens by clicking "Need help?" is showing as "Log In"
-2) On giving wrong credentials and clicking login button giving error message which also contains "Need help?" link . It is more of suggestion
-because it may confuse user to display some other help page different from other need help page
-3) Log in button text on Home page is different from Log In button text present in Login page
-4) If there is any error happens like giving no value under email or password and clicking Login button then response code coming back is 200.
-This I am not sure should be Http 200 or not as I am not sure on requirements
-5) If user gives wrong email and password and click Login button , then user is getting Http 200 back , but may be user should get Http 401.
-Again I am not sure on this how the requirements are around this.
-
-Bugs and issues found in mobile browser version: I tested this in iPhone 13 Pro(15.6), in safari
-1) Press Login button without entering any value
-   Click in password or email text box
-   Try scrolling
-Bug: It will not let you scroll and Hudl logo will be half visible , while Sign Up button and back button will not be visible to user
-
-2) In the login page put email in email text box and change the phone mode to landscape mode and then change back to portrait mode
-Bug: This will change the UI of page completely and many fields will not be visible to user anymore unless user refresh page
-
-3)When there is error providing invalid credentials there no fields are highlighted. This could be product requirement but I just wanted to highlight
-this
-
-4) Error message disappear as soon you type anything in text box, again this could be requirement but I just wanted to highlight
-
-5) Click on login page without entering any values in email or password field to get the error message.Now click inside any text box(password/email)
-Bug: There is white space at the bottom of page is visible when you scroll
+General Notes:
+1) Since for the Scenario 3 there was little ambiguity I have used serial number as reference to find out if the list is sorted in descending order or not
+Ideally this is the first question I will be asking with Product, that what is expected result should be so I can write test based on the answer.
+2) There are some extra Scenarios I have added to test because I was not sure what expectations are set from me.
+3) I have not changed any statements from the take home task for the steps because I was not sure if I am supposed to do or not
+So I have tried automated the steps in best possible way to accomodate testing, but if I was sure then can make the scenario steps more clear
+for better understanding
+4) Lot of steps could have been re=used but again I was not sure if I am, allowed to modify the scenario steps, hence there might be some amount of
+repeatability can be seen in steps
 
 
 
