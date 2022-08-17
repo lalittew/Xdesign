@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bddf6474-1001-4879-96d0-6966d9c1ea38" name="Default" comment="" />
+    <list default="true" id="bddf6474-1001-4879-96d0-6966d9c1ea38" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/HomePageFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/NeedHelpPageFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/OrganizationLoginPageFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/functionFile/SignUpPageFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/HudlHomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginPage.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,50 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadMe" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReadMe">
+      <file leaf-file-name="XdesignHomePage.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Features/XdesignHomePage.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="75" column="128" selection-start-line="75" selection-start-column="128" selection-end-line="75" selection-end-column="128" />
+            <state relative-caret-position="164">
+              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Features/LoginPage.feature">
+      <file leaf-file-name="XdesignHomePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+            <state relative-caret-position="45">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPageFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java">
+      <file leaf-file-name="XdesignHomePageFunctions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="164" column="76" selection-start-line="164" selection-start-column="76" selection-end-line="164" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5111#5112#0" expanded="true" />
-                <element signature="e#5179#5180#0" expanded="true" />
-                <element signature="e#7131#7132#0" expanded="true" />
-                <element signature="e#7169#7170#0" expanded="true" />
-                <element signature="e#7460#7461#0" expanded="true" />
-                <element signature="e#7491#7492#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="146">
+              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -65,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,32 +67,32 @@
       <file leaf-file-name="GeneralFunctions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="55" column="33" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="217">
+              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
                 <element signature="e#844#845#0" expanded="true" />
                 <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
                 <element signature="e#1353#1354#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
                 <element signature="e#1596#1597#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
+                <element signature="e#1670#1671#0" expanded="true" />
+                <element signature="e#2581#2582#0" expanded="true" />
+                <element signature="e#2636#2637#0" expanded="true" />
+                <element signature="e#2792#2800#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HudlHomePage.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Features/HudlHomePage.feature">
+      <file leaf-file-name="DriverBaseClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="62">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,6 +128,7 @@
       <find>How.class</find>
       <find>dis</find>
       <find>enabled</find>
+      <find>sate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,14 +159,17 @@
         <option value="$PROJECT_DIR$/src/test/java/functionFile/OrganizationLoginPageFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/HudlHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/functionFile/HomePageFunction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java" />
         <option value="$PROJECT_DIR$/ReadMe" />
-        <option value="$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java" />
-        <option value="$PROJECT_DIR$/Features/HudlHomePage.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginPage.java" />
         <option value="$PROJECT_DIR$/Features/LoginPage.feature" />
+        <option value="$PROJECT_DIR$/Features/HudlHomePage.feature" />
         <option value="$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java" />
+        <option value="$PROJECT_DIR$/Features/XdesignHomePage.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java" />
       </list>
     </option>
   </component>
@@ -207,99 +202,88 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="Features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testRunner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="browserFactory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="functionFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Xdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xdesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="stepDefinitions" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HudlLoginProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HudlLoginProject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumber-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,34 +426,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2022.08.08 at 09h 14m 37s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 18m 48s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 14m 58s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 19m 44s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 15m 33s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 27m 31s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 15m 59s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 32m 13s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 16m 30s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 44m 05s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 17m 21s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 19h 45m 39s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 17m 58s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 20h 15m 10s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 22m 39s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 20h 15m 57s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 23m 32s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 20h 31m 40s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2022.08.08 at 09h 56m 05s.xml">
+    <history-entry file="TestRunner - 2022.08.17 at 20h 32m 32s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -490,32 +474,52 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319027" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45142856" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3297568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319027" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18383405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -525,7 +529,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -537,9 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/stepDefinitions.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyStepdefs.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
@@ -696,9 +697,7 @@
     <entry file="file://$PROJECT_DIR$/ScreenShots/Verify that clicking Login with an organization button navigates user to organization login pagename.png" />
     <entry file="file://$PROJECT_DIR$/ScreenShots/Launch Hudl website in browser and verify that Login link is present in Home pagename.png" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/index.html" />
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/HudlHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -726,30 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Features/HudlHomePage.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,58 +739,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/ReadMe">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/browserFactory/DriverBaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java">
+    <entry file="file://$PROJECT_DIR$/Features/XdesignHomePage.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="164">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/LoginPageFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-608">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="164" column="76" selection-start-line="164" selection-start-column="76" selection-end-line="164" selection-end-column="76" />
+        <state relative-caret-position="-141">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5111#5112#0" expanded="true" />
             <element signature="e#5179#5180#0" expanded="true" />
             <element signature="e#7131#7132#0" expanded="true" />
-            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7218#7219#0" expanded="true" />
             <element signature="e#7460#7461#0" expanded="true" />
-            <element signature="e#7491#7492#0" expanded="true" />
+            <element signature="e#7542#7543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe">
+    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/GeneralFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="75" column="128" selection-start-line="75" selection-start-column="128" selection-end-line="75" selection-end-column="128" />
+        <state relative-caret-position="217">
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2792#2800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testRunner/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/functionFile/XdesignHomePageFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/XdesignHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>

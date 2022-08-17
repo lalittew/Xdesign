@@ -6,13 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DriverBaseClass {
     public static WebDriver driver;
 
+    public static String homePageUrl = "https://fe-automation-tool.s3.eu-west-1.amazonaws.com/index.html";
 
     public static WebDriver startBrowser()
     {
         System.setProperty("webdriver.chrome.driver","./WebDrivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.hudl.com/");
+        driver.get(homePageUrl);
 
         return driver;
     }
