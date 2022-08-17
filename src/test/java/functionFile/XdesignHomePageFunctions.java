@@ -21,6 +21,8 @@ public class XdesignHomePageFunctions extends DriverBaseClass {
     public String sortAscendingButtonText = "Sort Ascending";
     public String sortDescendingButtonText = "Sort Descending";
     public List<String> expectedYearDropDownValues = Arrays.asList("Filter By Year", "2006", "2007", "2008", "2009", "2010", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020");public List<String> expectedYearDropDownValuess = Arrays.asList("Filter By Year", "", "2007", "2008", "2009", "2010", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020");
+    public String sortOrderAscending = "Ascending";
+    public String sortOrderDescending = "Descending";
 
     //All the element identifiers defined for the Home page
     @FindBy(how = How.XPATH, using = "//img[@alt='SpaceX']")
@@ -82,6 +84,45 @@ public class XdesignHomePageFunctions extends DriverBaseClass {
         }
         for(int i=1; i<size; i++) {
             Assert.assertTrue(numbers.get(i) <= numbers.get(i-1));
+        }
+    }
+
+    public void checkIfListSortingOrder(List<WebElement> elements, String order){
+        int size = elements.size();
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for(int i=0; i<size; i++){
+            WebElement element = elements.get(i);
+            String text = element.getText();
+
+            String valueStr = text;
+            if(String.valueOf(text.charAt(0)).equals("#")){
+                valueStr = text.substring(1);
+            }
+            numbers.add(Integer.valueOf(valueStr));
+        }
+        for(int i=1; i<size; i++) {
+            switch (order) {
+
+                // Case 1
+                case "Ascending":
+
+                    // Print statement corresponding Ascending case
+                    Assert.assertTrue(numbers.get(i) >= numbers.get(i-1));
+                    break;
+
+                // Case 2
+                case "Descending":
+
+                    // Print statement corresponding descending case
+                    Assert.assertTrue(numbers.get(i) <= numbers.get(i-1));
+                    break;
+
+                // Default case when value does not match any case
+                default:
+
+                    // checking case when wrong sorting order is passed
+                    Assert.assertTrue((order=="Ascending")||(order=="Descending"), "Invalid sorting order is passed");
+            }
         }
     }
 }
