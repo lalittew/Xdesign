@@ -3,6 +3,7 @@ Explaining highlights of project:
 Framework and language used:
 This project is made by using Selenium Cucumber Framework with Page Object Model using Java as language
 This project is Maven project and all maven selenium,cucumber,java,junit and other dependencies can be found in "pom.xml" file
+I build this project using Intellij IDE and using mac operating system
 
 
 Feature File:
