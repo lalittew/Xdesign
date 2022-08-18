@@ -14,3 +14,9 @@ Feature: This feature file is to validate features of SpaceX home page not menti
     Given I am on home page
     And I verify the filter by year drop down values
     And I also verify that drop values are sorted
+
+  @test
+  Scenario: Verify that list of shuttles displayed is sorted in Ascending order by default
+    Given I am on home page
+    And I see default sort button value is Ascending
+    And I also verify that shuttle list displayed is sorted in Ascending Order

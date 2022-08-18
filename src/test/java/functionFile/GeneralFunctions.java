@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -66,6 +67,9 @@ public class GeneralFunctions extends DriverBaseClass {
     public void checkListSize(List<WebElement> elements, String expectedSize){
         Assert.assertEquals(String.valueOf(elements.size()), expectedSize, "Actual size is different from expected size");
     }
+    public void checkListNotEmpty(List<WebElement> elements){
+        Assert.assertTrue(elements.size() > 0, "List is empty");
+    }
 
     public String getActualListSize(List<WebElement> elements){
         return  String.valueOf(elements.size());
@@ -110,10 +114,10 @@ public class GeneralFunctions extends DriverBaseClass {
 
     public void fluentWait(WebElement element){
         FluentWait wait = new FluentWait(driver);
-        //Specify the timout of the wait
-        wait.withTimeout(20, TimeUnit.SECONDS);
-        //Sepcify polling time
-        wait.pollingEvery(2, TimeUnit.SECONDS);
+        //Specify the timeout of the wait
+        wait.withTimeout(Duration.ofSeconds(20));
+        //Specify polling time
+        wait.pollingEvery(Duration.ofSeconds(2));
         //Specify what exceptions to ignore
         wait.ignoring(NoSuchElementException.class);
 

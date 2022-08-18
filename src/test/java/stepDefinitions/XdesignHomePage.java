@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import browserFactory.DriverBaseClass;
+import enums.SortingOrder;
 import functionFile.GeneralFunctions;
 import functionFile.XdesignHomePageFunctions;
 import io.cucumber.java.en.Given;
@@ -36,11 +37,8 @@ public class XdesignHomePage extends DriverBaseClass {
         generalFunctions.checkElementPresent(xdesignHomePageFunctions.ShuttleList);
         generalFunctions.checkElementAttribute(xdesignHomePageFunctions.LaunchShuttleLogo, "src", xdesignHomePageFunctions.launchShuttleLogoSource);
 
-        //Verify that the size of list of shuttles is as expected
-        generalFunctions.checkListSize(xdesignHomePageFunctions.listOfShuttlesDisplayed, xdesignHomePageFunctions.shuttlelistSize);
-
-        //Verify that displayed list is sorted in ascending order of numbers
-        xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, xdesignHomePageFunctions.sortOrderAscending);
+        //Check list is not empty
+        generalFunctions.checkListNotEmpty(xdesignHomePageFunctions.listOfShuttlesDisplayed);
     }
 
     @Given("Selecting filter")
@@ -90,6 +88,6 @@ public class XdesignHomePage extends DriverBaseClass {
     public void items_should_be_ordered_alphabetically() {
         //Verify that list of shuttles displayed in descending order
         xdesignHomePageFunctions.checkIfListSortedDescendingOrder(xdesignHomePageFunctions.launchItemNumbers);
-        xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, xdesignHomePageFunctions.sortOrderDescending);
+        xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, SortingOrder.DESCENDING);
     }
 }

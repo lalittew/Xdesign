@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import browserFactory.DriverBaseClass;
+import enums.SortingOrder;
 import functionFile.GeneralFunctions;
 import functionFile.XdesignHomePageFunctions;
 import io.cucumber.java.en.Given;
@@ -69,5 +70,12 @@ public class XdesignHomePageExtraTests extends DriverBaseClass {
 
         //Assert that list is sorted or not by comparing temp list and actual list
         Assert.assertEquals(xdesignHomePageFunctions.actualYearDropDownOptions(), templist, "Actual list is not in sorted order");
+    }
+
+    @Given("I also verify that shuttle list displayed is sorted in Ascending Order")
+    public void i_also_verify_that_shuttle_list_displayed_is_sorted_in_Order() {
+        //Verify that displayed list is sorted in ascending order of numbers
+        xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, SortingOrder.ASCENDING);
+
     }
 }
