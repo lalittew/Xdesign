@@ -1,12 +1,16 @@
 package functionFile;
 
 import browserFactory.DriverBaseClass;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class GeneralFunctions extends DriverBaseClass {
 
@@ -102,5 +106,18 @@ public class GeneralFunctions extends DriverBaseClass {
             //Verify that the year got is equal to expected year
             Assert.assertEquals(splitDate[2], expectedYear, "Year is not matching as expected");
         }
+    }
+
+    public void fluentWait(WebElement element){
+        FluentWait wait = new FluentWait(driver);
+        //Specify the timout of the wait
+        wait.withTimeout(20, TimeUnit.SECONDS);
+        //Sepcify polling time
+        wait.pollingEvery(2, TimeUnit.SECONDS);
+        //Specify what exceptions to ignore
+        wait.ignoring(NoSuchElementException.class);
+
+        //Wait untill condition is satisfied
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 }

@@ -24,11 +24,14 @@ public class XdesignHomePageExtraTests extends DriverBaseClass {
     public void i_am_on_home_page() throws InterruptedException {
         generalFunctions.checkElementPresent(xdesignHomePageFunctions.SpaceXLogo);
         generalFunctions.checkElementPresent(xdesignHomePageFunctions.LoadingListText);
-        Thread.sleep(10000);
+
+        //Added fluent wait for that Filter drop down appear on screen
+        generalFunctions.fluentWait(xdesignHomePageFunctions.FilterByYearDropDown);
     }
 
     @Given("I see default sort button value is Ascending")
     public void i_see_default_sort_button_value_is_Ascending() {
+        //Default value of Sort drop down is "Sort Ascending"
         generalFunctions.checkElementText(xdesignHomePageFunctions.SortButton,xdesignHomePageFunctions.sortAscendingButtonText);
     }
 

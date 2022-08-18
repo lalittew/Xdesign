@@ -9,7 +9,7 @@ Feature: This feature file is to validate features of SpaceX home page not menti
     And I click the sort button
     Then sort button value change to ascending
 
-  @tests
+  @test
   Scenario: Verify that values of Filter by year drop down and the drop down values are sorted
     Given I am on home page
     And I verify the filter by year drop down values
