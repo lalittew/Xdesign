@@ -1,6 +1,6 @@
 Feature: This feature file is to validate features of SpaceX home page not mentioned in task
 
-  @tests
+  @test
   Scenario: Verify that the Sort button value changes from ascending to descending by clicking and vice versa
     Given I am on home page
     And I see default sort button value is Ascending

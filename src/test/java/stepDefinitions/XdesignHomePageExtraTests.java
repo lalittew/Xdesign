@@ -68,6 +68,6 @@ public class XdesignHomePageExtraTests extends DriverBaseClass {
         Collections.sort(xdesignHomePageFunctions.actualYearDropDownOptions());
 
         //Assert that list is sorted or not by comparing temp list and actual list
-        Assert.assertEquals(xdesignHomePageFunctions.actualYearDropDownOptions(), templist, "Actual list is not in sorted order");Assert.assertEquals(xdesignHomePageFunctions.expectedYearDropDownValues, xdesignHomePageFunctions.expectedYearDropDownValuess, "Actual list is not in sorted order");
+        Assert.assertEquals(xdesignHomePageFunctions.actualYearDropDownOptions(), templist, "Actual list is not in sorted order");
     }
 }

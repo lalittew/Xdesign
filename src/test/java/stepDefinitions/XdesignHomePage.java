@@ -8,11 +8,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class XdesignHomePage extends DriverBaseClass {
 
@@ -45,7 +40,7 @@ public class XdesignHomePage extends DriverBaseClass {
         generalFunctions.checkListSize(xdesignHomePageFunctions.listOfShuttlesDisplayed, xdesignHomePageFunctions.shuttlelistSize);
 
         //Verify that displayed list is sorted in ascending order of numbers
-     //   xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, xdesignHomePageFunctions.sortOrderAscending);
+        xdesignHomePageFunctions.checkIfListSortingOrder(xdesignHomePageFunctions.launchItemNumbers, xdesignHomePageFunctions.sortOrderAscending);
     }
 
     @Given("Selecting filter")

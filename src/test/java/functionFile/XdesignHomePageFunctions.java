@@ -20,7 +20,7 @@ public class XdesignHomePageFunctions extends DriverBaseClass {
     public String shuttlelistSize = "111";
     public String sortAscendingButtonText = "Sort Ascending";
     public String sortDescendingButtonText = "Sort Descending";
-    public List<String> expectedYearDropDownValues = Arrays.asList("Filter By Year", "2006", "2007", "2008", "2009", "2010", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020");public List<String> expectedYearDropDownValuess = Arrays.asList("Filter By Year", "", "2007", "2008", "2009", "2010", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020");
+    public List<String> expectedYearDropDownValues = Arrays.asList("Filter By Year", "2006", "2007", "2008", "2009", "2010", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020");
     public String sortOrderAscending = "Ascending";
     public String sortOrderDescending = "Descending";
 
